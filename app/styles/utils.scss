@@ -1,0 +1,12 @@
+@mixin square($side: 100%) {
+  height: $side;
+  width: $side;
+}
+
+@mixin fixed-top-left($top:0, $left:0) {
+  position : fixed;
+  top      : $top;
+  left     : $left;
+  right    : auto;
+  bottom   : auto;
+}

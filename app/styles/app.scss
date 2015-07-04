@@ -1,0 +1,41 @@
+@import "reset";
+@import "bower_components/sass-flex-mixin/flex";
+@import "bower_components/normalize-css/normalize";
+@import 'bower_components/bourbon/dist/bourbon';
+@import "utils";
+@import "config";
+
+*{
+  box-sizing: border-box;
+}
+html, body{
+  @include square;
+}
+.application-header{
+  @include fixed-top-left;
+  width: 100%;
+  height: $menu-height;
+  box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 0.2);
+  background: white;
+
+  .toggle-menu{
+    background-color: #14b9d6;
+    cursor: pointer;
+    height: $menu-height;
+    width: $menu-width;
+  }
+}
+.application-menu{
+  width: $menu-width;
+  height: 100%;
+  background-color: #4d5b69;
+
+  li{
+    height: $menu-width;
+    border-top: 1px solid #536372;
+    color: #f2f4f6; 
+  }
+}
+.application-content{
+  height: 100%;
+}
