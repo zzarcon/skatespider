@@ -10,6 +10,7 @@
 }
 html, body{
   @include square;
+  overflow: hidden;
 }
 .application-header{
   @include fixed-top-left;
@@ -33,9 +34,13 @@ html, body{
   li{
     height: $menu-width;
     border-top: 1px solid #536372;
-    color: #f2f4f6; 
+    color: #f2f4f6;
   }
 }
 .application-content{
+  height: 100%;
+}
+.application-body{
+  margin-top: $menu-height;
   height: 100%;
 }
