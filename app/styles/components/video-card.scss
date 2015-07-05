@@ -5,15 +5,28 @@
   margin: 10px;
   border: 1px solid #eee;
   cursor: pointer;
+  position: relative;
 
   &:hover{
+    .name{
+      opacity: 1;
+      top: 0;
+    }
     .cover{
       display: none;
     }
   }
   .name{
-    height: 40px;
-    display: none;
+    @include absolute-top-left(-10px);
+    @include transition(all 0.5s);
+    height: 20px;
+    opacity: 0;
+    padding: 3px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    background: rgba(white, 0.6);
+    overflow: hidden;
   }
   .cover{
     width: inherit;

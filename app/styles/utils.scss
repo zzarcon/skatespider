@@ -3,6 +3,14 @@
   width: $side;
 }
 
+@mixin absolute-top-left ($top:0, $left:0){
+  position : absolute;
+  top      : $top;
+  left     : $left;
+  right    : auto;
+  bottom   : auto;
+}
+
 @mixin fixed-top-left($top:0, $left:0) {
   position : fixed;
   top      : $top;
