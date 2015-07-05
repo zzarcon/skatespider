@@ -4,6 +4,8 @@
 @import 'bower_components/bourbon/dist/bourbon';
 @import "utils";
 @import "config";
+@import "sections/dashboard";
+@import "components/video-card";
 
 *{
   box-sizing: border-box;
@@ -30,6 +32,7 @@ html, body{
   width: $menu-width;
   height: 100%;
   background-color: #4d5b69;
+  position: fixed;
 
   li{
     height: $menu-width;
@@ -39,8 +42,15 @@ html, body{
 }
 .application-content{
   height: 100%;
+  overflow: auto;
 }
 .application-body{
   margin-top: $menu-height;
   height: 100%;
+}
+.current-section{
+  padding: 10px;
+  text-align: center;
+  margin-left: $menu-width;
+  background-color: #f1f3fa;
 }

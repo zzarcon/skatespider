@@ -17,12 +17,13 @@ module.exports = function(environment) {
       'report-uri': "*",
       'script-src': "* 'self' 'unsafe-inline' 'unsafe-eval'",
       'font-src': "* 'self' 'unsafe-inline' 'unsafe-eval'",
-      'default-src': "* 'self' 'unsafe-inline' 'unsafe-eval'"
+      'default-src': "* 'self' 'unsafe-inline' 'unsafe-eval'",
+      'media-src': "* 'self' 'unsafe-inline' 'unsafe-eval'",
     }
   };
 
   if (environment === 'development') {
-    
+
   }
 
   if (environment === 'test') {

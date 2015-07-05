@@ -1,0 +1,25 @@
+.video-card{
+  @include square(200px);
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  border: 1px solid #eee;
+  cursor: pointer;
+
+  &:hover{
+    .cover{
+      display: none;
+    }
+  }
+  .name{
+    height: 40px;
+    display: none;
+  }
+  .cover{
+    width: inherit;
+    border-radius: 3px;
+  }
+  video{
+    width: inherit;
+  }
+}
