@@ -55,3 +55,32 @@ html, body{
   margin-left: $menu-width;
   background-color: #f1f3fa;
 }
+.current-video{
+  @include absolute-bottom-left(-100%, $menu-width);
+  width: calc(100% - 54px);
+  background-color: white;
+  opacity: 0;
+  text-align: center;
+  height: calc(100% - 300px);
+  box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 0.2);
+
+  &.visible{
+    opacity: 1;
+    bottom: 0;
+  }
+  .video-name{
+    @include absolute-top-left;
+    width: 100%;
+    background-color: rgba(white, 0.6);
+    text-align: center;
+  }
+  .close-preview{
+    @include absolute-top-right(10px, 10px);
+    cursor: pointer;
+    z-index: 1;
+  }
+  video{
+    display: inline-block;
+    height: 100%;
+  }
+}
