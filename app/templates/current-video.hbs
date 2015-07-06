@@ -1,11 +1,13 @@
 <div class="current-video {{if showCurrentVideo 'visible'}}">
-  <div class="close-preview" {{action "closePreview"}}>
-    {{fa-icon "times"}}
+  <div class="current-video-content">
+    <div class="close-preview" {{action "closePreview"}}>
+      {{fa-icon "times"}}
+    </div>
+    {{#if showCurrentVideo}}
+      <video autoplay loop muted>
+        <source src={{currentVideo.src}} type="video/mp4">
+      </video>
+    {{/if}}
+    <div class="video-name">{{currentVideo.name}}</div>
   </div>
-  <div class="video-name">{{currentVideo.name}}</div>
-  {{#if showCurrentVideo}}
-    <video autoplay loop muted>
-      <source src={{currentVideo.src}} type="video/mp4">
-    </video>
-  {{/if}}
 </div>
