@@ -64,52 +64,64 @@ export default function() {
         },
         {
           id: 11,
-          name: 'Shaunhover flatground tricks',
-          cover: 'https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11258053_1586107534976447_1284903766_n.jpg',
-          src: 'https://igcdn-videos-e-19-a.akamaihd.net/hphotos-ak-xfa1/t50.2886-16/11229035_971906422833059_1407736680_n.mp4'
+          name: '@alexrisvad @bjarnetjoetta 🎥@marcusmvik #BarcelonaSkateboarding 🚩________________________',
+          cover: 'https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/11189570_1479944738892940_406477549_n.jpg',
+          src: 'https://scontent-mad1-1.cdninstagram.com/hphotos-xaf1/t50.2886-16/11214838_438545152974831_1098425410_n.mp4'
         },
         {
           id: 12,
-          name: 'Shaunhover flatground tricks',
-          cover: 'https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11258053_1586107534976447_1284903766_n.jpg',
-          src: 'https://igcdn-videos-e-19-a.akamaihd.net/hphotos-ak-xfa1/t50.2886-16/11229035_971906422833059_1407736680_n.mp4'
+          name: '#classiceurolines @gunzzz Follow @freeskatemag 4 more 🎬!! 👌',
+          cover: 'https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xtp1/t51.2885-15/11176299_853704778057288_715903679_n.jpg',
+          src: 'https://scontent-mad1-1.cdninstagram.com/hphotos-xfp1/t50.2886-16/11166331_936089149776356_1225423011_n.mp4'
         },
         {
           id: 13,
-          name: 'Shaunhover flatground tricks',
-          cover: 'https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11258053_1586107534976447_1284903766_n.jpg',
-          src: 'https://igcdn-videos-e-19-a.akamaihd.net/hphotos-ak-xfa1/t50.2886-16/11229035_971906422833059_1407736680_n.mp4'
+          name: '#Macba @danilebron 💥 @freeskatemag',
+          cover: 'https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xap1/t51.2885-15/11195670_1444025915891020_783279164_n.jpg',
+          src: 'https://igcdn-videos-a-19-a.akamaihd.net/hphotos-ak-xaf1/t50.2886-16/11200122_487367734754739_1823217840_n.mp4'
         },
         {
           id: 14,
-          name: 'Shaunhover flatground tricks',
-          cover: 'https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11258053_1586107534976447_1284903766_n.jpg',
-          src: 'https://igcdn-videos-e-19-a.akamaihd.net/hphotos-ak-xfa1/t50.2886-16/11229035_971906422833059_1407736680_n.mp4'
+          name: 'Check out the link in our BIO FACE to FACE @cristian_vannella @raulelegantesk8 https://youtu.be/x1gfJkJUsZk',
+          cover: 'https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/11186864_982222645122190_1242759630_n.jpg',
+          src: 'https://scontent-mad1-1.cdninstagram.com/hphotos-xaf1/t50.2886-16/11214627_1586862201591504_210124016_n.mp4'
         },
         {
           id: 15,
-          name: 'Shaunhover flatground tricks',
-          cover: 'https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11258053_1586107534976447_1284903766_n.jpg',
-          src: 'https://igcdn-videos-e-19-a.akamaihd.net/hphotos-ak-xfa1/t50.2886-16/11229035_971906422833059_1407736680_n.mp4'
+          name: '@codycepeda at #Macba @timmyjammz',
+          cover: 'https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/11189267_622037111265444_117701416_n.jpg',
+          src: 'https://igcdn-videos-d-1-a.akamaihd.net/hphotos-ak-xfp1/t50.2886-16/11200153_994706877230141_1229295035_n.mp4'
         },
         {
           id: 16,
-          name: 'Shaunhover flatground tricks',
-          cover: 'https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11258053_1586107534976447_1284903766_n.jpg',
-          src: 'https://igcdn-videos-e-19-a.akamaihd.net/hphotos-ak-xfa1/t50.2886-16/11229035_971906422833059_1407736680_n.mp4'
+          name: 'Tricks by @oldirty_jc 👊 🎥@urielbru',
+          cover: 'https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xap1/t51.2885-15/11199391_1402362540087288_814405091_n.jpg',
+          src: 'https://igcdn-videos-d-18-a.akamaihd.net/hphotos-ak-xft1/t50.2886-16/11198230_897494700307918_78166513_n.mp4'
         },
         {
           id: 17,
-          name: 'Shaunhover flatground tricks',
-          cover: 'https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11258053_1586107534976447_1284903766_n.jpg',
-          src: 'https://igcdn-videos-e-19-a.akamaihd.net/hphotos-ak-xfa1/t50.2886-16/11229035_971906422833059_1407736680_n.mp4'
+          name: 'Line by @fernanorigel👌',
+          cover: 'https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xap1/t51.2885-15/11202496_421324898048933_2071136041_n.jpg',
+          src: 'https://scontent-mad1-1.cdninstagram.com/hphotos-xpa1/t50.2886-16/11198057_988824967796781_1525331867_n.mp4'
         },
         {
           id: 18,
-          name: 'Shaunhover flatground tricks',
-          cover: 'https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11258053_1586107534976447_1284903766_n.jpg',
-          src: 'https://igcdn-videos-e-19-a.akamaihd.net/hphotos-ak-xfa1/t50.2886-16/11229035_971906422833059_1407736680_n.mp4'
+          name: 'The last #Batb7 champion @codycepeda is at #Macba , in this vid some tricks with our big friend',
+          cover: 'https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-15/11208112_615364985265427_638142858_n.jpg',
+          src: 'https://scontent-mad1-1.cdninstagram.com/hphotos-xpa1/t50.2886-16/11175478_698173683641772_446970552_n.mp4'
         },
+        {
+          id: 19,
+          name: 'In vid 👉@marcioroberto__ 🎥@favelasktsurf 🏾- #Line at #Macba',
+          cover: 'https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xap1/t51.2885-15/11189637_1815078358717852_295589519_n.jpg',
+          src: 'https://scontent-mad1-1.cdninstagram.com/hphotos-xtp1/t50.2886-16/11190603_423545767820667_1472913789_n.mp4'
+        },
+        {
+          id: 20,
+          name: '#Tbt C.Z. @zarazua1987 👌 🎥 @manu04star #VX1000',
+          cover: 'https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xap1/t51.2885-15/11190870_1440263502953412_1354603873_n.jpg',
+          src: 'https://igcdn-videos-a-9-a.akamaihd.net/hphotos-ak-xap1/t50.2886-16/11199042_806030246150569_340136687_n.mp4'
+        }
       ]
     }
   });
