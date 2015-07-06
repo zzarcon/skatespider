@@ -61,6 +61,7 @@ html, body{
   @include transition(all 0.5s);
   padding: 10px;
   width: $video-size;
+  max-width: calc(100% - 280px);
   margin-right: -$video-size;
   background-color: white;
   opacity: 0;
@@ -76,6 +77,7 @@ html, body{
     right: 25px;
     width: 450px;
     top: 85px;
+    max-width: calc(100% - 325px);
   }
   .close-preview{
     @include absolute-top-right(10px, 10px);
@@ -85,6 +87,8 @@ html, body{
   video{
     display: inline-block;
     width: 100%;
+    border: 1px solid #eee;
+    border-radius: 4px;
   }
   .video-name{
     text-align: center;

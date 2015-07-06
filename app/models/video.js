@@ -5,5 +5,6 @@ export default DS.Model.extend({
   name: attr('string'),
   src: attr('string'),
   cover: attr('string'),
-  author: attr('string')
+  author: attr('string'),
+  tags: attr()
 });
