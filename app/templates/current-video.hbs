@@ -11,7 +11,7 @@
     {{/if}}
     <ul class="related-videos">
       {{#each video in relatedVideos}}
-        <li>{{video-card video=video size="small"}}</li>
+        <li class="{{if video.isCurrentVideo 'is-current-video'}}">{{video-card video=video size="small"}}</li>
       {{/each}}
     </ul>
   </div>

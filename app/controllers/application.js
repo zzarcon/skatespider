@@ -6,10 +6,13 @@ export default Ember.ArrayController.extend({
 
   relatedVideos: Ember.computed('currentVideo', {
     get() {
-      var id = this.get('currentVideo.id');
-      if (!id) return;
+      let currentVideo = this.get('currentVideo');
+      if (!currentVideo) return;
 
-      return this.get('store').all('video').filterBy('user.id', id);
+      return this.get('store').all('video').filterBy('user.id', currentVideo.get('user.id')).map(function(video) {
+        video.set('isCurrentVideo', video.get('id') === currentVideo.get('id'));
+        return video;
+      });
     }
   }),
 

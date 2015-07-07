@@ -118,6 +118,10 @@ html, body{
     }
     li{
       display: inline-block;
+
+      &.is-current-video{
+        background-color: red;
+      }
     }
   }
   .current-video-content{
