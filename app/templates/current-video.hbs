@@ -1,5 +1,6 @@
 <div class="current-video {{if showCurrentVideo 'visible'}}">
   <div class="current-video-content">
+    <div class="video-name">{{currentVideo.name}}</div>
     <div class="close-preview" {{action "closePreview"}}>
       {{fa-icon "times"}}
     </div>
@@ -13,6 +14,5 @@
         <li>{{video-card video=video size="small"}}</li>
       {{/each}}
     </ul>
-    <div class="video-name">{{currentVideo.name}}</div>
   </div>
 </div>

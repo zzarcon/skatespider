@@ -51,7 +51,7 @@ html, body{
 
     &.active{
       background-color: #44515d;
-      
+
       //Arrow
       &:before{
         @include absolute-top-right(20px);
@@ -106,23 +106,28 @@ html, body{
     margin-right: 0;
   }
   .related-videos{
-    height: 110px;
+    height: 120px;
     white-space: nowrap;
     overflow-y: hidden;
     overflow-x: auto;
-    
+    background-color: #b6bcc2;
+    margin-top: -3px;
+
+    &::-webkit-scrollbar{
+      display: none;
+    }
     li{
       display: inline-block;
     }
   }
   .current-video-content{
     position: fixed;
-    right: 25px;
-    width: 450px;
-    top: 85px;
+    right: 0;
+    width: 500px;
+    top: $menu-height;
     max-width: calc(100% - 325px);
-    height: 100%;
-    overflow: auto;
+    height: calc(100% - 70px);
+    overflow: hidden;
   }
   .close-preview{
     @include absolute-top-right(10px, 10px);
@@ -131,11 +136,12 @@ html, body{
   }
   video{
     display: inline-block;
-    width: 100%;
-    border: 1px solid #eee;
-    border-radius: 4px;
+    // width: 100%;
+    height: calc(100% - 155px);
   }
   .video-name{
     text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
   }
 }
