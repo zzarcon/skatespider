@@ -2,6 +2,7 @@ import Mirage, {faker}  from 'ember-cli-mirage';
 
 export default Mirage.Factory.extend({
   name: faker.name.findName,
+  user: faker.list.cycle(1, 2, 3, 4, 5),
   cover: faker.list.cycle('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11240718_1442937302685265_811948162_n.jpg',
   'https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11258053_1586107534976447_1284903766_n.jpg',
   'https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11236122_949022468483003_43650478_n.jpg',
