@@ -27,6 +27,13 @@ html, body{
     cursor: pointer;
     height: $menu-height;
     width: $menu-width;
+    text-align: center;
+    
+    i{
+      color: white;
+      font-size: 25px;
+      margin-top: 20px;
+    }
   }
 }
 .application-menu{
@@ -39,6 +46,32 @@ html, body{
     height: $menu-width;
     border-top: 1px solid #536372;
     color: #f2f4f6;
+    text-align: center;
+    cursor: pointer;
+
+    &.active{
+      background-color: #44515d;
+      
+      //Arrow
+      &:before{
+        @include absolute-top-right(20px);
+        content: " ";
+        border-color: transparent #F1F3FA transparent transparent;
+        border-style: solid;
+        border-top: 8px double transparent;
+        border-bottom: 8px double transparent;
+        border-left: 0;
+        border-right: 7px solid $current-section-color;
+      }
+      i{
+        color: #15c1df;
+      }
+    }
+    i{
+      font-size: 24px;
+      color: #8cacc3;
+      line-height: 50px;
+    }
   }
 }
 .application-content{
@@ -54,7 +87,7 @@ html, body{
   padding: 10px;
   text-align: center;
   margin-left: $menu-width;
-  background-color: #f1f3fa;
+  background-color: $current-section-color;
 }
 .current-video{
   $video-size: 500px;
