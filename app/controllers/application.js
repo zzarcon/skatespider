@@ -4,6 +4,15 @@ export default Ember.ArrayController.extend({
   currentVideo: null,
   showCurrentVideo: false,
 
+  relatedVideos: Ember.computed('currentVideo', {
+    get() {
+      var id = this.get('currentVideo.id');
+      if (!id) return;
+
+      return this.get('store').all('video').filterBy('user.id', id);
+    }
+  }),
+
   setCurrentVideo(video) {
     this.set('showCurrentVideo', false);
     this.set('currentVideo', video);

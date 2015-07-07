@@ -28,7 +28,7 @@ html, body{
     height: $menu-height;
     width: $menu-width;
     text-align: center;
-    
+
     i{
       color: white;
       font-size: 25px;
@@ -105,12 +105,24 @@ html, body{
     opacity: 1;
     margin-right: 0;
   }
+  .related-videos{
+    height: 110px;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    
+    li{
+      display: inline-block;
+    }
+  }
   .current-video-content{
     position: fixed;
     right: 25px;
     width: 450px;
     top: 85px;
     max-width: calc(100% - 325px);
+    height: 100%;
+    overflow: auto;
   }
   .close-preview{
     @include absolute-top-right(10px, 10px);

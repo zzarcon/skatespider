@@ -8,6 +8,11 @@
         <source src={{currentVideo.src}} type="video/mp4">
       </video>
     {{/if}}
+    <ul class="related-videos">
+      {{#each video in relatedVideos}}
+        <li>{{video-card video=video size="small"}}</li>
+      {{/each}}
+    </ul>
     <div class="video-name">{{currentVideo.name}}</div>
   </div>
 </div>

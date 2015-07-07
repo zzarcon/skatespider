@@ -1,7 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  classNameBindings: ['size'],
   classNames: ['video-card'],
+
+  size: 'medium',
   video: null,
   action: 'setCurrentVideo',
 

@@ -1,5 +1,4 @@
 .video-card{
-  @include square(200px);
   display: inline-block;
   overflow: hidden;
   margin: 10px;
@@ -15,6 +14,12 @@
     .cover{
       display: none;
     }
+  }
+  &.small{
+    @include square(100px);
+  }
+  &.medium{
+    @include square(200px);
   }
   .name{
     @include absolute-top-left(-10px);
