@@ -1,4 +1,6 @@
 export default function() {
-  this.get('/api/users');
-  this.get('/api/videos');
+  this.namespace = '/api';
+
+  this.get('/users');
+  this.get('/videos');
 }
