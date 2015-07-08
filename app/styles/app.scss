@@ -23,7 +23,7 @@ html, body{
   z-index: 1;
 
   .toggle-menu{
-    background-color: #14b9d6;
+    background-color: $blue-electric;
     cursor: pointer;
     height: $menu-height;
     width: $menu-width;
@@ -69,7 +69,7 @@ html, body{
     }
     i{
       font-size: 24px;
-      color: #8cacc3;
+      color: $menu-icon-color;
       line-height: 50px;
     }
   }
@@ -105,22 +105,47 @@ html, body{
     opacity: 1;
     margin-right: 0;
   }
+  .author-text{
+    border-top: 1px solid #eee;
+    padding: 5px;
+    font-size: 14px;
+    margin-top: -3px;
+
+    .author-name{
+      text-decoration: none;
+      color: $blue-electric;
+      font-weight: bold;
+      
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
   .related-videos{
     height: 120px;
     white-space: nowrap;
     overflow-y: hidden;
     overflow-x: auto;
     background-color: #b6bcc2;
-    margin-top: -3px;
 
     &::-webkit-scrollbar{
       display: none;
     }
     li{
       display: inline-block;
+      position: relative;
 
       &.is-current-video{
-        background-color: red;
+        background-color: $blue-electric;
+
+        &:before{
+          @include absolute-top-left(-6px, 51px);
+          content: " ";
+          border-color: transparent #F1F3FA transparent transparent;
+          border-style: solid;
+          border: 8px double transparent;
+          border-bottom: 8px solid white;
+        }
       }
     }
   }
@@ -138,10 +163,9 @@ html, body{
     cursor: pointer;
     z-index: 1;
   }
-  video{
+  .current-video-element{
     display: inline-block;
-    // width: 100%;
-    height: calc(100% - 155px);
+    height: calc(100% - 182px);
   }
   .video-name{
     text-align: center;

@@ -5,10 +5,13 @@
       {{fa-icon "times"}}
     </div>
     {{#if showCurrentVideo}}
-      <video autoplay loop muted>
+      <video class="current-video-element" autoplay loop muted>
         <source src={{currentVideo.src}} type="video/mp4">
       </video>
     {{/if}}
+    <div class="author-text">
+      More videos of {{#link-to "user" class="author-name"}}@{{currentVideo.user.name}}{{/link-to}}
+    </div>
     <ul class="related-videos">
       {{#each video in relatedVideos}}
         <li class="{{if video.isCurrentVideo 'is-current-video'}}">{{video-card video=video size="small"}}</li>

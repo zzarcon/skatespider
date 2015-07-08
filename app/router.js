@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('dashboard');
   this.route('tags');
   this.route('users');
+  this.route('user', {path: '/user:user_id'});
 });
 
 export default Router;
