@@ -1,1 +1,6 @@
-{{outlet}}
+{{#each user in content}}
+  <div class="user-card">
+    <img src={{user.avatar}} alt={{user.name}}>
+    {{user.name}}
+  </div>
+{{/each}}

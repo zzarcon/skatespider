@@ -48,13 +48,15 @@ html, body{
     color: #f2f4f6;
     text-align: center;
     cursor: pointer;
+    position: relative;
 
     &.active{
       background-color: #44515d;
 
       //Arrow
       &:before{
-        @include absolute-top-right(20px);
+        @include absolute-top-right(50%);
+        @include transform(translateY(-50%));
         content: " ";
         border-color: transparent #F1F3FA transparent transparent;
         border-style: solid;
@@ -77,6 +79,7 @@ html, body{
 .application-content{
   height: 100%;
   overflow: auto;
+  background-color: $current-section-color;
 }
 .application-body{
   @include flexbox;
@@ -115,7 +118,7 @@ html, body{
       text-decoration: none;
       color: $blue-electric;
       font-weight: bold;
-      
+
       &:hover{
         text-decoration: underline;
       }
@@ -139,12 +142,12 @@ html, body{
         background-color: $blue-electric;
 
         &:before{
-          @include absolute-top-left(-6px, 51px);
+          @include absolute-top-left(-1px, 51px);
           content: " ";
           border-color: transparent #F1F3FA transparent transparent;
           border-style: solid;
           border: 8px double transparent;
-          border-bottom: 8px solid white;
+          border-top: 8px solid white;
         }
       }
     }
