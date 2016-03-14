@@ -18,7 +18,7 @@ module.exports = function(environment) {
       'font-src': "* 'self' 'unsafe-inline' 'unsafe-eval'",
       'default-src': "* 'self' 'unsafe-inline' 'unsafe-eval'",
       'media-src': "* 'self' 'unsafe-inline' 'unsafe-eval'"
-    }
+    },
     APP: {}
   };
 
